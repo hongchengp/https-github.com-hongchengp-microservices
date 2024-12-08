@@ -13,6 +13,8 @@ func NewApplication(db ports.DBPort) *Application {
 	return &Application{
 		db: db,
 	}
+
+	
 }
 
 func (a Application) PlaceOrder(order domain.Order) (domain.Order, error) {
